@@ -21,6 +21,7 @@ public interface MoviesContract {
     }
 
     interface UserActionListener{
-        void openMovie(int movieId);
+        void loadMovies(boolean factor);
+        void showMoviesDetailsUi(int movie);
     }
 }
