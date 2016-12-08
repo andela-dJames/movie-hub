@@ -7,6 +7,7 @@ public interface MovieRepository {
 
     void showMovies(LoadAllMoviesCallBack callBack);
     void getMovie(GetMovieCallBack callBack);
+    PageResult getAllMoviesFromApi();
 
     interface LoadAllMoviesCallBack{
         void onMoviesLoaded(List<Movie> movies);
